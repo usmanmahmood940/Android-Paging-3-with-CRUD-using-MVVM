@@ -5,6 +5,8 @@ import com.example.paging_3_android.Paging.QuotePagingSource
 import com.example.paging_3_android.Paging.QuoteRemoteMediator
 import com.example.paging_3_android.QuoteDatabase
 import com.example.paging_3_android.Retrofit.QuoteAPI
+import com.example.paging_3_android.models.Result
+import java.util.concurrent.Flow
 import javax.inject.Inject
 
 @ExperimentalPagingApi
@@ -21,5 +23,5 @@ class QuoteRepository @Inject constructor(
         ),
         remoteMediator = QuoteRemoteMediator(quoteAPI,quoteDatabase),
         pagingSourceFactory = {quoteDatabase.quoteDao().getQuotes()}
-    ).liveData
+    ).flow
 }

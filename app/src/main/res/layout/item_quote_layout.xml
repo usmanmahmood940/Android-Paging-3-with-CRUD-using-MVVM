@@ -3,22 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
-    >
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvQuote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Truth is powerfull and it prevails"
-
         android:padding="16dp"
-        android:textSize="28sp"
-        android:textColor="@color/black"/>
+
+        android:text="Truth is powerfull and it prevails"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnEdit"
+            android:text="Remove"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="6dp"
-        android:background="#CCC"/>
-    
+        android:background="#CCC" />
+
 
 </LinearLayout>
