@@ -29,3 +29,7 @@ To run this project, you can follow these steps:
 ## Contributing
 
 Contributions are always welcome! If you have any suggestions or issues, please open an issue or pull request on this repository.
+
+## Contact
+
+If you have any questions or feedback, please contact us at usman.hussain940@gmail.com
